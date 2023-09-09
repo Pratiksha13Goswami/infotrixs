@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapido Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="app.js">
+    <style>
+         
+    </style>
+</head>
+<body>
+    <div class="topnav">
+                   
+        
+                <a href="#aboutUs">About Us</a>
+                <a href="#features">Features</a>
+                <a href="#contact">Contact</a>
+                <a href="#faqs">FAQs</a>
+                  
+     </div> 
+     
+    
+    
+    <img class="img1"src="https://img.paisawapas.com/ovz3vew9pw/2022/07/15171839/Frame-1968.jpg" alt="">
+        
+        
+
+    <section id="aboutUs">
+        <h2>About Us</h2>
+        <p><b>India’s Beloved
+            Bike Taxi Service</b>
+            <br>
+            <u>We are not an option, we are a choice
+            We're</u><br> #1 choice of 10 Million people because we're the solution of India's intra-city commuting problems. With assured safety, we also provide economically priced rides.<br>
+            
+            <b>What makes us different?</b>
+            <br>
+            Our bike taxis can dodge the traffic during peak hours and get you to the destination in a jiffy! So when you think travel, think Rapido. </p>
+    <img  class="img2"src="https://www.themobileindian.com/wp-content/uploads/2021/06/rapido_cover.jpg" alt="">
+    </section>
+
+    <section id="features">
+        <h2>Features</h2>
+        <ul>
+            <li>Fast and Reliable Rides</li>
+            <li>24/7 Availability</li>
+            <li>Easy Booking Process</li>
+            <li>Experienced Drivers</li>
+             
+        </ul>
+        <img class="img3"src="https://static.dribbble.com/users/2131993/screenshots/4995981/rapido-dribbble_1x.gif" alt="">
+        <a class="button1" href="https://rapido.bike/">Download Rapido</a>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p class="p1">If you have any questions or need assistance, feel free to contact us at 
+            <p>
+                <b>Registered Office Address:</b>
+                Roppen Transportation Services Pvt Ltd, 3rd Floor, Sai Prithvi Arcade, Megha Hills, Sri Rama Colony, Madhapur, Hyderabad - 500081.<br>
+                
+                <b>Head Office:</b>
+                Roppen Transportation Services Pvt Ltd, #148, 1st Floor, SLV Nilaya, 5th Main 80ft road, HSR Layout 7th Sector, Bangalore 560102.<br>
+                
+                <b>Corporate Office:</b>
+                Roppen Transportation Services Pvt Ltd (Rapido), Salarpuria Softzone, Wing C, First floor, Office 1, Block A, Bellandur Village, Varthur Hobli, Bangalore South Taluk, Outer Ring Road, Bangalore-560103.</p><br>
+            
+            <a href="mailto:info@rapido.com">info@rapido.com</a>.</p>
+        
+    </section>
+
+    <section id="faqs">
+        <h2>FAQs</h2>
+        <div class="faq-item">
+            <h3>How do I book a ride?</h3>
+            <p>Booking a ride with Rapido is easy. Simply download our app, sign in, enter your destination, and confirm your ride.</p>
+            
+        
+        <div class="faq-item">
+            <h3>What is the pricing like?</h3>
+            <p>Our pricing is competitive and varies based on factors such as distance and time. You can check the fare estimate in the app before booking.</p>
+        </div>
+        
+    </section>
+    <footer>2023@rapido/All Rights Reserved!</footer>
+
+
+
+    <script>
+        
+        const navLinks = document.querySelectorAll('header nav ul li a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', e => {
+                e.preventDefault();
+                const targetId = e.target.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+                window.scrollTo({
+                    top: targetSection.offsetTop,
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // FAQ toggles
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            const question = item.querySelector('h3');
+            const answer = item.querySelector('p');
+            question.addEventListener('click', () => {
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>

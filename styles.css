@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+section {
+    padding: 50px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+h2 {
+    color: #333;
+}
+.faq-item {
+    text-align: left;
+    margin-bottom: 20px;
+}
+.faq-item h3 {
+    cursor: pointer;
+}
+.faq-item p {
+    display: none;
+}
+button{
+    float: right;
+    color: red;
+    text-align: center;
+    background-color: yellow;
+    cursor: pointer;
+    border-radius:5px;
+    padding: 14px 16px;
+    font-size: 20px;
+}
+button :hover{  
+    cursor: pointer;
+ }
+
+img{
+    width: 500px;
+}
+p{
+    font-size: 20px;
+    font-size: arial;
+}
+l1{
+    background-color: rgb(70, 150, 150);
+}
+ body ul{
+    background-color: #333;
+    color: white;   
+}
+img{
+    position: relative;
+    flex: auto;
+}
+
+    .topnav a:hover{
+background-color: #ddd;
+color: black;
+}
+ul{
+    list-style-type: none;
+    text-align: center;
+    margin: 0auto;
+    padding: 0px;
+    display: block;
+    overflow: hidden;
+    color: white;
+    display: inline;
+}
+
+#features{
+    background-color: white;
+}
+/*ul li{
+    color:black;
+    background-color: white;
+}*/
+#aboutus{
+    background-color: aqua;
+    
+}
+h2{
+    background-color:royalblue
+}
+
+#features li{
+    font-size: 20px;
+    color:forestgreen
+    
+        }
+footer{
+    text-align: center;
+    
+}  
+img{
+    border-radius: 20px;
+    width: 500px;
+} 
+
+header{
+    top: 0 ;
+    left: 0;
+    right: 0;
+    position: fixed;
+}  
+.img1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+} 
+.topnav{
+    background-color: #333;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+
+    
+
+}  
+.topnav a{
+    float:left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 17px;
+    position: sticky;
+} 
+.img1{
+    width: 300px;
+} 
+.img2{
+    width:300px;
+}
+.img3{
+    width: 300px;
+}
+.p1{
+    color: orangered;
+    
+}
+.button1{
+    background-color: yellow;
+    color: black;
+    border-radius: 10px;
+    padding: 14px;
+    font-size: 20px;
+    
+}
