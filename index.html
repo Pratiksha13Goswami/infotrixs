@@ -1,117 +1,174 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rapido Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="app.js">
+    <title>Discussion Forum</title>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="print.css" media="print" />
     <style>
-         
+        /* CSS to adjust the size of the icon */
+        .subHeader img {
+            width: 20px; /* Adjust the width as needed */
+            height: 20px; /* Adjust the height as needed */
+        }
+
+        /* CSS to style the dropdown menu */
+        .category-dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .category-dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .category-dropdown:hover .category-dropdown-content {
+            display: block;
+        }
+
+        .category-dropdown-content a {
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .category-dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        /* CSS for the search bar */
+        #search-bar {
+            display: none;
+            position: absolute;
+            top: 50px; /* Adjust the top position as needed */
+            left: 20px; /* Adjust the left position as needed */
+            width: 200px; /* Adjust the width as needed */
+            border: 1px solid #ccc;
+            background-color: #fff;
+            padding: 5px;
+            z-index: 2;
+        }
     </style>
 </head>
 <body>
-    <div class="topnav">
-                   
+<div id="top"><a href="#main-copy" class="doNotDisplay doNotPrint">Skip to main content.</a></div>
+<div id="header">
+    <h1 class="headerTitle"> <a href="#">Discussion Forum</a> </h1>
+    <div class="subHeader">
+        <span class="doNotDisplay">Navigation: </span>
+        <a href="#"><img src="images/home.png" alt="home" title="home" /></a>
         
-                <a href="#aboutUs">About Us</a>
-                <a href="#features">Features</a>
-                <a href="#contact">Contact</a>
-                <a href="#faqs">FAQs</a>
-                  
-     </div> 
-     
-    
-    
-    <img class="img1"src="https://img.paisawapas.com/ovz3vew9pw/2022/07/15171839/Frame-1968.jpg" alt="">
-        
-        
-
-    <section id="aboutUs">
-        <h2>About Us</h2>
-        <p><b>India’s Beloved
-            Bike Taxi Service</b>
-            <br>
-            <u>We are not an option, we are a choice
-            We're</u><br> #1 choice of 10 Million people because we're the solution of India's intra-city commuting problems. With assured safety, we also provide economically priced rides.<br>
-            
-            <b>What makes us different?</b>
-            <br>
-            Our bike taxis can dodge the traffic during peak hours and get you to the destination in a jiffy! So when you think travel, think Rapido. </p>
-    <img  class="img2"src="https://www.themobileindian.com/wp-content/uploads/2021/06/rapido_cover.jpg" alt="">
-    </section>
-
-    <section id="features">
-        <h2>Features</h2>
-        <ul>
-            <li>Fast and Reliable Rides</li>
-            <li>24/7 Availability</li>
-            <li>Easy Booking Process</li>
-            <li>Experienced Drivers</li>
-             
-        </ul>
-        <img class="img3"src="https://static.dribbble.com/users/2131993/screenshots/4995981/rapido-dribbble_1x.gif" alt="">
-        <a class="button1" href="https://rapido.bike/">Download Rapido</a>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p class="p1">If you have any questions or need assistance, feel free to contact us at 
-            <p>
-                <b>Registered Office Address:</b>
-                Roppen Transportation Services Pvt Ltd, 3rd Floor, Sai Prithvi Arcade, Megha Hills, Sri Rama Colony, Madhapur, Hyderabad - 500081.<br>
-                
-                <b>Head Office:</b>
-                Roppen Transportation Services Pvt Ltd, #148, 1st Floor, SLV Nilaya, 5th Main 80ft road, HSR Layout 7th Sector, Bangalore 560102.<br>
-                
-                <b>Corporate Office:</b>
-                Roppen Transportation Services Pvt Ltd (Rapido), Salarpuria Softzone, Wing C, First floor, Office 1, Block A, Bellandur Village, Varthur Hobli, Bangalore South Taluk, Outer Ring Road, Bangalore-560103.</p><br>
-            
-            <a href="mailto:info@rapido.com">info@rapido.com</a>.</p>
-        
-    </section>
-
-    <section id="faqs">
-        <h2>FAQs</h2>
-        <div class="faq-item">
-            <h3>How do I book a ride?</h3>
-            <p>Booking a ride with Rapido is easy. Simply download our app, sign in, enter your destination, and confirm your ride.</p>
-            
-        
-        <div class="faq-item">
-            <h3>What is the pricing like?</h3>
-            <p>Our pricing is competitive and varies based on factors such as distance and time. You can check the fare estimate in the app before booking.</p>
+        <div class="category-dropdown">
+            <a href="#home"><img src="images/category.png" alt="Categories" title="Categories" /></a>
+            <div class="category-dropdown-content">
+                <a href="#">Category 1</a>
+                <a href="#">Category 2</a>
+                <a href="#">Category 3</a>
+                <a href="#">Category 4</a>
+                <a href="#">Category 5</a>
+                <a href="#">Category 6</a>
+                <a href="#">Category 7</a>
+                <a href="#">Category 8</a>
+                <a href="#">Category 9</a>
+                <a href="#">Category 10</a>
+            </div>
         </div>
         
-    </section>
-    <footer>2023@rapido/All Rights Reserved!</footer>
-
-
-
-    <script>
+        <a href="#" onclick="toggleSearchBar()"><img src="images/serach.png" alt="Search" title="Search" /></a>
         
-        const navLinks = document.querySelectorAll('header nav ul li a');
-        navLinks.forEach(link => {
-            link.addEventListener('click', e => {
-                e.preventDefault();
-                const targetId = e.target.getAttribute('href').substring(1);
-                const targetSection = document.getElementById(targetId);
-                window.scrollTo({
-                    top: targetSection.offsetTop,
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // FAQ toggles
-        const faqItems = document.querySelectorAll('.faq-item');
-        faqItems.forEach(item => {
-            const question = item.querySelector('h3');
-            const answer = item.querySelector('p');
-            question.addEventListener('click', () => {
-                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
-            });
-        });
-    </script>
+        <div id="search-bar">
+            <input type="text" placeholder="Search...">
+        </div>
+        
+        <a href="#"><img src="images/login.png" alt="Login" title="Login" /></a>
+        <a href="#"><img src="images/register.png" alt="Register" title="Register" /></a>
+    </div>
+</div>
+<div id="side-bar">
+    <!-- ##### Left Sidebar ##### -->
+    <div class="leftSideBar">
+        <p class="sideBarTitle">Forum Navigation</p>
+        <ul>
+            <li><a href="#introduction">Forum Categories</a></li>
+            <li><a href="#general-discussion">General Discussion</a></li>
+            <li><a href="#web-development">Web Development</a></li>
+            <!-- Add more category links as needed -->
+        </ul>
+    </div>
+</div>
+<div id="main-copy">
+    <h1 id="introduction" style="border-top: none; padding-top: 0;">Forum Categories</h1>
+    <!-- Category: General Discussion -->
+    <div id="general-discussion" class="category">
+        <h2 class="category-title">General Discussion</h2>
+        <!-- Topic: How to Create a Forum Layout? -->
+        <div class="topic">
+            <div class="topic-info">
+                <span class="topic-author">User123</span>
+                <span class="topic-date">Posted on September 26, 2023</span>
+            </div>
+            <h3 class="topic-title"><a href="#">How to Create a Forum Layout?</a></h3>
+            <div class="topic-content">
+                <p>This is a discussion about creating a forum layout. What are the best practices? Share your tips and tricks!</p>
+            </div>
+            <div class="topic-actions">
+                <a href="#">Reply</a> | <a href="#">Report</a>
+            </div>
+        </div>
+        <!-- Topic: Choosing the Right Forum Software -->
+        <div class="topic">
+            <div class="topic-info">
+                <span class="topic-author">User456</span>
+                <span class="topic-date">Posted on September 25, 2023</span>
+            </div>
+            <h3 class="topic-title"><a href="#">Choosing the Right Forum Software</a></h3>
+            <div class="topic-content">
+                <p>Let's discuss the various forum software options available and how to choose the right one for your needs.</p>
+            </div>
+            <div class="topic-actions">
+                <a href="#">Reply</a> | <a href="#">Report</a>
+            </div>
+        </div>
+    </div>
+    <!-- Category: Web Development -->
+    <div id="web-development" class="category">
+        <h2 class="category-title">Web Development</h2>
+        <!-- Topic: Responsive Design Techniques -->
+        <div class="topic">
+            <div class="topic-info">
+                <span class="topic-author">User789</span>
+                <span class="topic-date">Posted on September 24, 2023</span>
+            </div>
+            <h3 class="topic-title"><a href="#">Responsive Design Techniques</a></h3>
+            <div class="topic-content">
+                <p>Share your favorite responsive design techniques and tools for creating mobile-friendly websites.</p>
+            </div>
+            <div class="topic-actions">
+                <a href="#">Reply</a> | <a href="#">Report</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="footer">
+    <div class="doNotPrint">
+        <a href="#">Contact Us</a> | <a href="#">Privacy Policy</a>  | <a href="#">Feedback</a> | <a href="#">Help</a>
+    </div>
+    <div> Copyright &copy; 2023, Discussion Forum </div>
+</div>
+<script>
+    function toggleSearchBar() {
+        var searchBar = document.getElementById("search-bar");
+        if (searchBar.style.display === "block") {
+            searchBar.style.display = "none";
+        } else {
+            searchBar.style.display = "block";
+        }
+    }
+</script>
 </body>
 </html>
